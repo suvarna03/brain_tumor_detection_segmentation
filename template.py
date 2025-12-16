@@ -70,4 +70,4 @@ for filepath in list_of_files:
         filepath.touch()
         logging.info(f"Created: {filepath}")
 
-print("✅ Brain Tumor Detection project structure created successfully!")
+print("✅ Brain Tumor Detection project structure created successfully!!")

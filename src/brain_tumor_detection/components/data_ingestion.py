@@ -1,6 +1,7 @@
 import os
 import shutil
 import kagglehub
+import sys
 from pathlib import Path
 
 from brain_tumor_detection.logging.logger import logging
@@ -31,4 +32,4 @@ class DataIngestion:
             logging.info(f"Dataset downloaded successfully at: {target_dir}")
 
         except Exception as e:
-            raise CustomException(e)
+            raise BrainTumorException(e,sys)

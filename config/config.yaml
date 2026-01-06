@@ -15,8 +15,6 @@ data_transformation:
 
 classification:
   root_dir: artifacts/classification
-  model_name: efficientnetb0
 
 segmentation:
   root_dir: artifacts/segmentation
-  model_name: unet

@@ -1,0 +1,22 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  dataset_name: brisc2025
+  source: kaggle
+  kaggle_dataset: briscdataset/brisc2025
+
+data_validation:
+  root_dir: artifacts/data_validation
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  image_size: [224, 224]
+
+classification:
+  root_dir: artifacts/classification
+  model_name: efficientnetb0
+
+segmentation:
+  root_dir: artifacts/segmentation
+  model_name: unet

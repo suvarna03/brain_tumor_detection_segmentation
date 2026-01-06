@@ -3,18 +3,17 @@ import os
 from datetime import datetime
 
 LOG_DIR = "logs"
-LOG_FILE = f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
-# LOG_FILE = f"{datetime.now().strftime('%Y-%m-%d')}.log"
+os.makedirs(LOG_DIR, exist_ok=True)
 
-logs_path = os.path.join(os.getcwd(), LOG_DIR)
-os.makedirs(logs_path, exist_ok=True)
-
-LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE)
+LOG_FILE = os.path.join(
+    LOG_DIR, f"{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.log"
+)
 
 logging.basicConfig(
-    filename=LOG_FILE_PATH,
-    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s",
+    filename=LOG_FILE,
+    format="[%(asctime)s] %(levelname)s %(module)s: %(message)s",
     level=logging.INFO,
 )
 
-logger = logging.getLogger("brain_tumor_detection")
+logger = logging.getLogger("brain_tumor_logger")
+

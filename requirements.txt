@@ -1,30 +1,27 @@
-# ---------------- Core ML / DL ----------------
-tensorflow>=2.12          # CNNs, classification, segmentation (U-Net, transfer learning)
-numpy                     # Numerical operations
-pandas                    # Tabular handling (metadata, splits)
-scikit-learn              # Metrics, train-test split, evaluation
-matplotlib                # Visualization (EDA, debugging)
+tensorflow>=2.12
+numpy
+pandas
+scikit-learn
+matplotlib
 
 # ---------------- Image Processing ----------------
-opencv-python             # Image loading & preprocessing
-albumentations            # Image augmentation for medical images
+opencv-python
+albumentations
 
 # ---------------- Experiment & Utilities ----------------
-tqdm                      # Progress bars
-joblib                    # Save/load models, artifacts
-pyyaml                    # Read config.yaml & params.yaml
+tqdm
+joblib
+PyYAML
 
 # ---------------- Deployment ----------------
-streamlit                 # End-user UI
-kagglehub                 # Dataset download from Kaggle
+streamlit
+kagglehub
 
 # ---------------- AWS / MLOps ----------------
-boto3                     # AWS S3, ECR, ECS interaction
+boto3
 
 # ---------------- Development ----------------
-notebook                  # Jupyter notebooks for research
-python-box                # Dot-access for config objects
-ensure                    # Input validation & safety
+notebook
+python-box
+ensure
 
-# ---------------- Packaging ----------------
--e .
